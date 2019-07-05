@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>A. Tingson</title>
-	<link rel="icon" type="image/ico" href="images/berry.png" />
+<title>A. Tingson</title>
+<link rel="icon" type="image/ico" href="images/berry.png" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-
-
-* {box-sizing: border-box}
-body {font-family: courier;}
-
-h1 {
-	color: black;
-	font-family: courier;
-	font-size: 300%;
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
 }
+
 .snowflake {
 	position: fixed;
 	background-color: #CCC;
@@ -26,178 +23,175 @@ h1 {
 	height: 10px;
 }
 
-/* Style the tab */
-.tab {
-  float: left;
-  background-color: #fcede8;
-  width: 20%;
-  height: 300px;
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/flowers.png");
+  min-height: 75%;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
+.menu {
+  display: none;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #fff9f7;
-}
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #f2e0da;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
 </style>
-</head>
 <body>
 
-<body style="background-color:#ffe2d9;">
-<audio src="music/tcure.mp3"
-	preload="auto"
-	controls>
-</audio>
-
-<h1>Aianne Gail Tingson</h1>
-<p>Get to know me :)</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen" style="font-family:courier;">Profile</button>
-  <button class="tablinks" onclick="openCity(event, 'Favorites')" style="font-family:courier;">Faves</button>
-	<button class="tablinks" onclick="openCity(event, 'Hobbies')" style="font-family:courier;">Hobbies</button>
-	<button class="tablinks" onclick="openCity(event, 'Goals')" style="font-family:courier;">Goals in Life</button>
-  <button class="tablinks" onclick="openCity(event, 'Links')" style="font-family:courier;">Social Media Links</button>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">GOALS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LIKES</a>
+    </div>
+  </div>
 </div>
 
-<div id="Profile" class="tabcontent">
-  <h3>Profile</h3>
-		<img src="images/start.png" alt="me" width="1055" height="445">
-  <p>comp sci student &middot; 19yrs. old &middot; JISSA</p>
-	<p>Birthday: November 20, 1999</p>
-	<p>Zodiac Sign: Scorpio</p>
-	<p>Personality Type: ENFP</p>
-	<p>Hometown: Sto. Tomas, Batangas City</p><br>
-	<p>Height: 5'4"</p>
-	<p>Blood Type: O</p><br>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Get to know me :)</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">A i a n n e</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Everland, Seoul</span>
+  </div>
+</header>
 
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>comp sci student &middot; 19yrs. old &middot; JISSA</p>
+    <p>Birthday: November 20, 1999</p>
+    <p>Zodiac Sign: Scorpio</p>
+    <p>Personality Type: ENFP</p>
+    <p>Hometown: Sto. Tomas, Batangas City</p><br>
+    <p>Height: 5'4"</p>
+    <p>Blood Type: O</p><br>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"When you stopped wishing things wouldn't fall apart, you'd stop suffering when they did."</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <img src="images/start.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
 </div>
 
-<div id="Favorites" class="tabcontent">
-  <h3>Favorites</h3>
-  <p>Animal: Rabbit, Alpaca, Dog</p>
-	<p>Fruit: Strawberry, Mango, Kiwi, Peach</p>
-	<p>Food: anything hehe</p>
-	<p>Drink: Water, Sprite, Milkis</p>
-	<p>Season: Summer, Spring (tbh any)</p><br>
-	<p>Music: 80s, OPM, Kpop, (indies hehe)</p>
-		<img src="images/eraser.jpg" alt="eraser" style="width:500px;height:500px;">
-		<img src="images/cure.jpg" alt="the_cure" style="width:500px;height:500px;">
-		<img src="images/duran.jpg" alt="duran_duran" style="width:500px;height:500px;">
-		<img src="images/ptg.jpg" alt="pentagon" style="width:500px;height:500px;">
-		<img src="images/dpr.jpg" alt="dpr live" style="width:500px;height:500px;">
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LIKES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Favorites</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Hobbies</div>
+      </a>
+    </div>
 
-	<p>Movies: Drama, Sci-fi, (every genre tbh)</p>
-		<img src="images/meand.jpg" alt="meand" style="width:400px;height:543px;">
-		<img src="images/whiplash.jpg" alt="whiplash" class="center">
-		<img src="images/club.jpg" alt="fightclub" style="width:396px;height:522px;">
-	<p> TV Series</p>
-		<img src="images/mrrobot.jpg" alt="mr.robot" style="width:540px;height:540px;">
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="image/start.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
 </div>
 
-<div id="Hobbies" class="tabcontent">
-  <h3>Hobbies</h3>
-	<p>Doing Sports - Badminton, Running</p>
-	<p>Playing instruments - Guitar, Drums (a little)</p>
-	<p>Drawing</p>
-		<img src="images/draw.png" alt="drawing" style="width:461px;height:388px;">
-		<img src="images/draw2.png" alt="drawing2" style="width:364px;height:303px;">
-	<p>Traveling</p>
-		<img src="images/meh.JPG" alt="korea" style="width:600px;height:336px;">
-		<img src="images/meh3.JPG" alt="korea" style="width:600px;height:336px;">
-	<p>Taking Pictures</p>
-		<img src="images/flowers.png" alt="flowers" width="600" height="336">
-		<img src="images/sky.png" alt="sky" width="600" height="336">
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p align="center">Instagram
+    <a href="https://instagram.com/g.ail_">
+    <img src="images/ig.png" alt="instagram" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
+
+  Facebook
+    <a href="https://facebook.com/aiannegail.tingson">
+    <img src="images/fb.png" alt="facebook" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
+
+  Twitter
+    <a href="https://twitter.com/g_ail_">
+    <img src="images/tw.png" alt="twitter" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
+
+  Spotify
+    <a href="https://open.spotify.com/user/gailtingson?si=wV_w0DCgSn6P40Naj4j4cA">
+    <img src="images/sp.png" alt="spotify" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
+    </p>
+    </form>
+  </div>
 </div>
 
-<div id="Hobbies" class="tabcontent">
-  <h3>Goals</h3>
-</div>
-
-<div id="Goals" class="tabcontent">
-  <h3>Goals in Life</h3>
-	<p>Finish college and help my parents</p>
-	<p>Travel around the globe</p>
-	<p>Open my own restaurant or cafe</p>
-		<img src="images/cafe.jpg" alt="sky" width="400" height="500">
-</div>
-
-<div id="Links" class="tabcontent">
-  <h3>Social Media Links</h3>
-	<p>Instagram</p>
-	<a href="https://instagram.com/g.ail_">
-	<img src="images/ig.png" alt="instagram" style="width:50px;height:50px;">
-	</a>
-
-	<p>Facebook</p>
-	<a href="https://facebook.com/aiannegail.tingson">
-	<img src="images/fb.png" alt="facebook" style="width:50px;height:50px;">
-	</a>
-
-	<p>Twitter</p>
-	<a href="https://twitter.com/g_ail_">
-	<img src="images/tw.png" alt="twitter" style="width:50px;height:50px;">
-	</a>
-
-	<p>Spotify</p>
-	<a href="https://open.spotify.com/user/gailtingson?si=wV_w0DCgSn6P40Naj4j4cA">
-	<img src="images/sp.png" alt="spotify" style="width:50px;height:50px;">
-	</a>
-	</a>
 
 
+<!-- End page content -->
 </div>
 
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
   }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("myLink").click();
 </script>
-
-
-
 <style>
   #snowflakeContainer {
     position: absolute;
@@ -217,6 +211,7 @@ document.getElementById("defaultOpen").click();
     height: 10px;
   }
 </style>
+
 <div id="snowflakeContainer">
   <span class="snowflake"></span>
 </div>
@@ -239,11 +234,11 @@ document.getElementById("defaultOpen").click();
   var enableAnimations = false;
   var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
 
-  // Handle animation accessibility preferences
+  // Handle animation accessibility preferences 
   function setAccessibilityState() {
     if (reduceMotionQuery.matches) {
       enableAnimations = false;
-    } else {
+    } else { 
       enableAnimations = true;
     }
   }
@@ -358,7 +353,7 @@ document.getElementById("defaultOpen").click();
       for (var i = 0; i < snowflakes.length; i++) {
         var snowflake = snowflakes[i];
         snowflake.update();
-      }
+      }      
     }
 
     // Reset the position of all the snowflakes to a new value
@@ -392,6 +387,6 @@ document.getElementById("defaultOpen").click();
   function setResetFlag(e) {
     resetPosition = true;
   }
-	</script>
+</script>
 </body>
 </html>

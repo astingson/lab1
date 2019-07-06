@@ -10,6 +10,7 @@
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
+
 }
 
 .snowflake {
@@ -26,14 +27,13 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("images/flowers.png");
+  background-image: url(images/flowers.png);
   min-height: 75%;
 }
 
 .menu {
   display: none;
 }
-
 
 </style>
 <body>
@@ -48,10 +48,10 @@ body, html {
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">GOALS</a>
+      <a href="#menu" class="w3-button w3-block w3-black">LIKES</a>
     </div>
     <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">LIKES</a>
+      <a href="#where" class="w3-button w3-block w3-black">LINKS</a>
     </div>
   </div>
 </div>
@@ -72,33 +72,32 @@ body, html {
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
+
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
-    <p>comp sci student &middot; 19yrs. old &middot; JISSA</p>
+    <p align="center">comp sci student &middot; 19yrs. old &middot; JISSA</p>
     <p>Birthday: November 20, 1999</p>
     <p>Zodiac Sign: Scorpio</p>
     <p>Personality Type: ENFP</p>
-    <p>Hometown: Sto. Tomas, Batangas City</p><br>
+    <p>Hometown: Sto. Tomas, Batangas City</p>
     <p>Height: 5'4"</p>
-    <p>Blood Type: O</p><br>
+    <p>Blood Type: O</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"When you stopped wishing things wouldn't fall apart, you'd stop suffering when they did."</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+      <p>Looking for Alaska: Miles Halter</p>
     </div>
-    <img src="images/start.png" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+      <img src="images/start.png" style="width:100%;max-width:1000px" class="w3-margin-top">
   </div>
 </div>
 
 <!-- Menu Container -->
 <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
- 
+
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LIKES</span></h5>
-  
+
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
         <div class="w3-col s6 tablink">Favorites</div>
@@ -109,46 +108,48 @@ body, html {
     </div>
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <p class="w3-text-grey"><p>Animal: Rabbit, Alpaca, Dog</p>
+      <p>Fruit: Strawberry, Mango, Kiwi, Peach</p>
+      <p>Food: anything hehe</p>
+      <p>Drink: Water, Sprite, Milkis</p>
+      <p>Season: Summer, Spring (tbh any)</p>
+      <p>Music: 80s, OPM, Kpop, (indies hehe)</p>
+        <img src="images/eraser.jpg" alt="eraser" width="200" height="200">
+        <img src="images/cure.jpg" alt="the_cure" width="200" height="200">
+        <img src="images/duran.jpg" alt="duran_duran" width="200" height="200">
+        <img src="images/ptg.jpg" alt="pentagon" width="200" height="200">
+        <img src="images/dpr.jpg" alt="dpr live" width="200" height="200">
+      <p>Movies: Drama, Sci-fi, (every genre tbh)</p>
+      	<img src="images/meand.jpg" alt="meand" width="210" height="320">
+    	  <img src="images/whiplash.jpg" alt="whiplash" width="200" height="320">
+      	<img src="images/club.jpg" alt="fightclub" width="210" height="320">
+      <p> TV Series</p>
+        <img src="images/mrrobot.jpg" alt="mr.robot" width="200" height="200"><br>
     </div>
 
     <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="image/start.png" style="width:100%;max-width:1000px;margin-top:32px;">
+      <p>Doing Sports - Badminton, Running</p>
+    	<p>Playing instruments - Guitar, Drums (a little)</p>
+    	<p>Drawing</p>
+    		<img src="images/draw.png" alt="drawing" width="200" height="200">
+    		<img src="images/draw2.png" alt="drawing2" width="200" height="200">
+	     <p>Traveling</p>
+    		<img src="images/meh.JPG" alt="korea" width="437" height="238">
+        <p> </p>
+    		<img src="images/meh3.JPG" alt="korea" width="437" height="238">
+	     <p>Taking Pictures</p>
+    		<img src="images/flowers.png" alt="flowers" width="437" height="238">
+        <p> </p>
+    		<img src="images/sky.png" alt="sky" width="437" height="238">
+    </div>
+        <img src="images/start.png" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FIND ME ON</span></h5>
     <p align="center">Instagram
     <a href="https://instagram.com/g.ail_">
     <img src="images/ig.png" alt="instagram" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
@@ -234,11 +235,11 @@ document.getElementById("myLink").click();
   var enableAnimations = false;
   var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
 
-  // Handle animation accessibility preferences 
+  // Handle animation accessibility preferences
   function setAccessibilityState() {
     if (reduceMotionQuery.matches) {
       enableAnimations = false;
-    } else { 
+    } else {
       enableAnimations = true;
     }
   }
@@ -353,7 +354,7 @@ document.getElementById("myLink").click();
       for (var i = 0; i < snowflakes.length; i++) {
         var snowflake = snowflakes[i];
         snowflake.update();
-      }      
+      }
     }
 
     // Reset the position of all the snowflakes to a new value

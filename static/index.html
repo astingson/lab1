@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>A. Tingson</title>
+<title>𝙰. 𝚃𝚒𝚗𝚐𝚜𝚘𝚗</title>
 <link rel="icon" type="image/ico" href="images/berry.png" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,52 @@
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: courier new;
+}
+
+input[type=text]{
+  width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+input[type=text]:focus{
+    border-color:pink;
+    box-shadow:0 0 8px 0 pink;
+  }
+
+textarea:focus {
+    width:100%;
+    border-color:pink;
+    box-shadow: 0 0 8px 0 pink;
+    border:2px solid #aaa;
+    resize: vertical;
+    padding: 20px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: pink;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-inline button:hover {
+  background-color: gray;
+  border-radius: 8px;
+}
+
 
 }
 
@@ -48,10 +94,10 @@ body, html {
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">LIKES</a>
+      <a href="#menu" class="w3-button w3-block w3-black">TMI</a>
     </div>
     <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">LINKS</a>
+      <a href="#links" class="w3-button w3-block w3-black">LINKS</a>
     </div>
   </div>
 </div>
@@ -62,7 +108,7 @@ body, html {
     <span class="w3-tag">Get to know me :)</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">A i a n n e</span>
+    <span class="w3-text-white" style="font-size:90px"><strong>A i a n n e</strong></span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">Everland, Seoul</span>
@@ -70,20 +116,26 @@ body, html {
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class="w3-sand w3-grayscale w3-large" style="background-image:url(images/grid.png)">
+  <div class="w3-padding-large" align="center">
+  <audio src="music/tcure.mp3"
 
-
+          preload="auto"
+          controls
+          class="light">
+  </audio>
+  </div>
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
-    <p align="center">comp sci student &middot; 19yrs. old &middot; JISSA</p>
-    <p>Birthday: November 20, 1999</p>
-    <p>Zodiac Sign: Scorpio</p>
-    <p>Personality Type: ENFP</p>
-    <p>Hometown: Sto. Tomas, Batangas City</p>
-    <p>Height: 5'4"</p>
-    <p>Blood Type: O</p>
+      <p align="center">comp sci student &middot; 19yrs. old &middot; JISSA</p>
+      <p>Birthday: November 20, 1999</p>
+      <p>Zodiac Sign: Scorpio</p>
+      <p>Personality Type: ENFP</p>
+      <p>Hometown: Sto. Tomas, Batangas City</p>
+      <p>Height: 5'4"</p>
+      <p>Blood Type: O</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"When you stopped wishing things wouldn't fall apart, you'd stop suffering when they did."</i></p>
       <p>Looking for Alaska: Miles Halter</p>
@@ -96,18 +148,24 @@ body, html {
 <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LIKES</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TOO MUCH INFO</span></h5>
 
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Favorites</div>
+    <div class="w3-row w3-center w3-card w3-padding" style="background-color:pink;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Like');" id="myLink">
+        <div class="w3-col s6 tablink">FAVES</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Hobbies</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Hobb');">
+        <div class="w3-col s6 tablink">HOBBIES</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Goal');">
+        <div class="w3-col s6 tablink">GOALS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Ask');">
+        <div class="w3-col s6 tablink">ASK</div>
       </a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+    <div id="Like" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
       <p class="w3-text-grey"><p>Animal: Rabbit, Alpaca, Dog</p>
       <p>Fruit: Strawberry, Mango, Kiwi, Peach</p>
       <p>Food: anything hehe</p>
@@ -125,9 +183,10 @@ body, html {
       	<img src="images/club.jpg" alt="fightclub" width="210" height="320">
       <p> TV Series</p>
         <img src="images/mrrobot.jpg" alt="mr.robot" width="200" height="200"><br>
+        <p> </p>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+    <div id="Hobb" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
       <p>Sports - Badminton, Running</p>
     	<p>Playing instruments - Guitar, Drums (a little)</p>
     	<p>Drawing</p>
@@ -138,16 +197,32 @@ body, html {
         <p> </p>
     		<img src="images/meh3.JPG" alt="korea" width="675" height="366">
 	     <p>Taking Pictures</p>
-    		<img src="images/flowers.png" alt="flowers" width="675" height="366">
+    		<img src="images/pic.png" alt="flowers" width="675" height="366">
         <p> </p>
     		<img src="images/sky.png" alt="sky" width="675" height="366">
+        <p> </p>
+    </div>
+
+    <div id="Goal" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
+      	<p>Finish college and help my parents</p>
+      	<p>Travel around the globe</p>
+      	<p>Open my own restaurant or cafe</p>
+      		<img src="images/cafe.jpg" alt="sky" width="400" height="500">
+        <p> </p>
+    </div>
+
+    <div id="Ask" class="w3-container menu w3-padding-48 w3-card" style="background-color:#ffe2d9;" align="center">
+        <form class="form-inline" action="form.html" method="get">
+          <textarea name="message" placeholder="Ask a question or submit a message..."></textarea>
+          <button type="submit">Submit</button>
+        </form>
     </div>
 
   </div>
 </div>
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
+<div class="w3-container" id="links" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FIND ME ON</span></h5>
     <p align="center">Instagram
@@ -217,6 +292,8 @@ document.getElementById("myLink").click();
   <span class="snowflake"></span>
 </div>
 
+
+<!--FALLING  EFFECT-->
 <script>
   // Array to store our Snowflake objects
   var snowflakes = [];

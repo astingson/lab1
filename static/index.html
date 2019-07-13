@@ -1,124 +1,48 @@
 <!DOCTYPE html>
 <html>
-<title>𝙰. 𝚃𝚒𝚗𝚐𝚜𝚘𝚗</title>
-<link rel="icon" type="image/ico" href="images/berry.png" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link href="style/designs.css">
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-  scroll-behavior: smooth;
-}
-
-p {
-  font-family: courier new;
-}
-
-input[type=text]{
-  width:100%;
-    border:2px solid #aaa;
-    border-radius:4px;
-    margin:8px 0;
-    outline:none;
-    padding:8px;
-    box-sizing:border-box;
-    transition:.3s;
-  }
-
-input[type=text]:focus{
-    border-color:pink;
-    box-shadow:0 0 8px 0 pink;
-  }
-
-textarea:focus {
-    width:100%;
-    border-color:pink;
-    box-shadow: 0 0 8px 0 pink;
-    border:2px solid #aaa;
-    resize: vertical;
-    padding: 20px;
-}
-
-.form-inline button {
-  padding: 10px 20px;
-  background-color: pink;
-  border: 1px solid #ddd;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.form-inline button:hover {
-  background-color: gray;
-  border-radius: 8px;
-}
-
-
-}
-
-.snowflake {
-	position: fixed;
-	background-color: #CCC;
-	user-select: none;
-	z-index: 1000;
-	pointer-events: none;
-	border-radius: 50%;
-	width: 10px;
-	height: 10px;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url(images/flowers.png);
-  min-height: 75%;
-}
-
-.menu {
-  display: none;
-}
-
-</style>
+  <title>𝙰. 𝚃𝚒𝚗𝚐𝚜𝚘𝚗</title>
+  <link rel="icon" type="image/ico" href="images/berry.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link href="design.css" rel="stylesheet" type="text/css">
 <body>
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+<div class="top">
+  <div class="row padding black">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      <a href="#" class="button block black">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      <a href="#about" class="button block black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">TMI</a>
+      <a href="#menu" class="button block black">TMI</a>
     </div>
     <div class="w3-col s3">
-      <a href="#links" class="w3-button w3-block w3-black">LINKS</a>
+      <a href="#links" class="button block black">LINKS</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Get to know me :)</span>
+<header class="bgimg display-container graymin" id="home">
+  <div class="dispbotle center padding-large hidsmall">
+    <span class="tag">Get to know me :)</span>
   </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px"><strong>A i a n n e</strong></span>
+  <div class="dispmid center">
+    <span class="txtwhite" style="font-size:90px"><strong>A i a n n e</strong></span>
   </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">Everland, Seoul</span>
+  <div class="dispbotri center padding-large">
+    <span class="txtwhite">Everland, Seoul</span>
   </div>
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large" style="background-image:url(images/grid.png)">
-  <div class="w3-padding-large" align="center">
+<div class="sand gray large" style="background-image:url(images/grid.png)">
+  <div class="padding-large" align="center">
   <audio src="music/tcure.mp3"
 
           preload="auto"
@@ -127,17 +51,19 @@ textarea:focus {
   </audio>
   </div>
 <!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
-      <p align="center">comp sci student &middot; 19yrs. old &middot; JISSA</p>
+<div class="cont" id="about">
+  <div class="conte" style="max-width:700px">
+    <h5 class="center padding-64"><span class="tag wide">ABOUT ME</span></h5>
+      <p>comp sci student &middot; 19yrs. old &middot; JISSA</p>
+    <div align="left">
       <p>Birthday: November 20, 1999</p>
       <p>Zodiac Sign: Scorpio</p>
       <p>Personality Type: ENFP</p>
       <p>Hometown: Sto. Tomas, Batangas City</p>
       <p>Height: 5'4"</p>
       <p>Blood Type: O</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
+    </div>
+    <div class="panel leftbar light-grey">
       <p><i>"When you stopped wishing things wouldn't fall apart, you'd stop suffering when they did."</i></p>
       <p>Looking for Alaska: Miles Halter</p>
     </div>
@@ -146,12 +72,12 @@ textarea:focus {
 </div>
 
 <!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
+<div class="cont" id="menu">
+  <div class="conte" style="max-width:700px">
 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TOO MUCH INFO</span></h5>
+    <h5 class="center padding-48"><span class="tag wide">TOO MUCH INFO</span></h5>
 
-    <div class="w3-row w3-center w3-card w3-padding" style="background-color:pink;">
+    <div class="row center card padding" style="background-color:pink;">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Like');" id="myLink">
         <div class="w3-col s6 tablink">FAVES</div>
       </a>
@@ -166,8 +92,8 @@ textarea:focus {
       </a>
     </div>
 
-    <div id="Like" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
-      <p class="w3-text-grey"><p>Animal: Rabbit, Alpaca, Dog</p>
+    <div id="Like" class="cont menu padding-30 card" style="background-color:#ffe2d9;" align="center">
+      <p class="text-grey"><p>Animal: Rabbit, Alpaca, Dog</p>
       <p>Fruit: Strawberry, Mango, Kiwi, Peach</p>
       <p>Food: anything hehe</p>
       <p>Drink: Water, Sprite, Milkis</p>
@@ -187,7 +113,7 @@ textarea:focus {
         <p> </p>
     </div>
 
-    <div id="Hobb" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
+    <div id="Hobb" class="cont menu padding-30 card" style="background-color:#ffe2d9;" align="center">
       <p>Sports - Badminton, Running</p>
     	<p>Playing instruments - Guitar, Drums (a little)</p>
     	<p>Drawing</p>
@@ -204,7 +130,7 @@ textarea:focus {
         <p> </p>
     </div>
 
-    <div id="Goal" class="w3-container menu w3-padding-30 w3-card" style="background-color:#ffe2d9;" align="center">
+    <div id="Goal" class="cont menu padding-30 card" style="background-color:#ffe2d9;" align="center">
       	<p>Finish college and help my parents</p>
       	<p>Travel around the globe</p>
       	<p>Open my own restaurant or cafe</p>
@@ -212,7 +138,7 @@ textarea:focus {
         <p> </p>
     </div>
 
-    <div id="Ask" class="w3-container menu w3-padding-48 w3-card" style="background-color:#ffe2d9;" align="center">
+    <div id="Ask" class="cont menu padding-48 card" style="background-color:#ffe2d9;" align="center">
         <form class="form-inline" action="form.html" method="get">
           <textarea name="message" placeholder="Ask a question or submit a message..."></textarea>
           <button type="submit">Submit</button>
@@ -223,9 +149,9 @@ textarea:focus {
 </div>
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="links" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FIND ME ON</span></h5>
+<div class="cont" id="links" style="padding-bottom:32px;">
+  <div class="conte" style="max-width:700px">
+    <h5 class="center padding-48"><span class="tag wide">FIND ME ON</span></h5>
     <p align="center">Instagram
     <a href="https://instagram.com/g.ail_">
     <img src="images/ig.png" alt="instagram" style="width:50px;height:50px;"></a>&nbsp;&nbsp;
@@ -262,10 +188,10 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
 }
 document.getElementById("myLink").click();
 </script>
